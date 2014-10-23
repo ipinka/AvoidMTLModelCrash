@@ -11,5 +11,9 @@
 - (unsigned long)unsignedLongValue;
 - (unsigned long long)unsignedLongLongValue;
 - (NSUInteger)unsignedIntegerValue;
+- (NSString *)stringValue;
+- (NSComparisonResult)compare:(NSNumber *)otherNumber;
+- (BOOL)isEqualToNumber:(NSNumber *)number;
+- (NSString *)descriptionWithLocale:(id)locale;
 
 @end
