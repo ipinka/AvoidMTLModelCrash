@@ -64,19 +64,9 @@ static NSNumberFormatter *__avoidCrashNumberFormatter = nil;
     return self;
 }
 
-- (NSComparisonResult)compare:(NSNumber *)otherNumber
-{
-    return [[self stringNumber] compare:otherNumber];
-}
-
 - (BOOL)isEqualToNumber:(NSNumber *)number
 {
     return [[self stringNumber] isEqualToNumber:number];
-}
-
-- (NSString *)descriptionWithLocale:(id)locale
-{
-    return [[self stringNumber] descriptionWithLocale:locale];
 }
 
 @end
