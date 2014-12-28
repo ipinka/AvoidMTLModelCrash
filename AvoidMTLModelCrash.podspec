@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.author       = "Pinka"
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/ipinka/AvoidMTLModelCrash", :tag => "v1.0.0" }
+  s.source       = { :git => "https://github.com/ipinka/AvoidMTLModelCrash.git", :tag => "v1.0.0" }
   s.source_files  = "*.{h,m}"
   s.dependency 'JRSwizzle', '~> 1.0'
 
