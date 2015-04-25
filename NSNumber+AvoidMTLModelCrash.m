@@ -6,6 +6,14 @@ static NSString *__checkString = @"";
 
 @implementation NSNumber (AvoidMTLModelCrash)
 
++ (void)load
+{
+    static dispatch_once_t onceToken;
+     dispatch_once(&onceToken, ^{
+        [self avoidMTLModelCrash];
+     });
+}
+
 + (void)avoidMTLModelCrash
 {
     [self jr_swizzleMethod:@selector(respondsToSelector:) withMethod:@selector(swizzle_respondsToSelector:) error:nil];
